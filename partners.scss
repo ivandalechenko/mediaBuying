@@ -1,6 +1,46 @@
 .partners {
     margin-top: 50px;
 
+    &_light1 {
+        min-width: 600px;
+        min-height: 600px;
+        background-color: #64225C88;
+        filter: blur(500px);
+        border-radius: 100%;
+
+        &_wrapper {
+            display: flex;
+            justify-content: left;
+            position: relative;
+            z-index: -1;
+
+            .free_img {
+                align-items: baseline;
+                justify-content: left;
+            }
+        }
+    }
+
+    &_light2 {
+        min-width: 600px;
+        min-height: 600px;
+        background-color: #5BDF6044;
+        filter: blur(500px);
+        border-radius: 100%;
+
+        &_wrapper {
+            display: flex;
+            justify-content: right;
+            position: relative;
+            z-index: -1;
+
+            .free_img {
+                align-items: baseline;
+                justify-content: right;
+            }
+        }
+    }
+
     &_header {
         font-size: 100px;
         font-weight: 700;

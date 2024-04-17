@@ -3,6 +3,27 @@
     padding-bottom: 36px;
     display: flex;
 
+    &_light {
+        min-width: 600px;
+        min-height: 600px;
+        background-color: #5B68DF44;
+        filter: blur(500px);
+        border-radius: 100%;
+
+        &_wrapper {
+            display: flex;
+            justify-content: center;
+            position: relative;
+            z-index: -1;
+            width: 100%;
+
+            .free_img {
+                align-items: baseline;
+                justify-content: left;
+            }
+        }
+    }
+
     &_col {
         width: 50%;
     }
