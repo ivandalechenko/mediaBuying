@@ -1,0 +1,56 @@
+.solutions_element_decor {
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    position: relative;
+    z-index: -1;
+
+    &_first {
+        &_camera {
+            top: 40px;
+            right: 40px;
+        }
+
+        &_mic {
+            top: 180px;
+            right: 130px;
+        }
+
+        &_phone {
+            top: 180px;
+            right: 20px;
+        }
+
+        @media(max-width: 1100px) {
+
+            &_mic {
+                top: 10px;
+                right: 30px;
+
+                img {
+                    width: 80px;
+                }
+            }
+
+            &_camera {
+                top: 90px;
+                right: 10px;
+
+                img {
+                    width: 70px;
+                }
+            }
+
+
+            &_phone {
+                top: 150px;
+                right: 70px;
+
+                img {
+                    width: 120px;
+                }
+            }
+        }
+    }
+
+}

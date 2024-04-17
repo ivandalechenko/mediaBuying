@@ -1,0 +1,56 @@
+.header {
+    margin-top: 26px;
+    background-color: rgba($color: #fff, $alpha: .1);
+    height: 62px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 25px;
+
+    @media(max-width: 750px) {
+        border-radius: 0px;
+        margin-top: 0px;
+    }
+
+    &_logo {
+        display: flex;
+        align-items: center;
+    }
+
+    &_links {
+        display: flex;
+        column-gap: 24px;
+
+        @media(max-width: 950px) {
+            column-gap: 12px;
+        }
+
+        @media(max-width: 750px) {
+            display: none;
+        }
+
+        &_element {
+            font-size: 16px;
+            font-weight: 500;
+
+            @media(max-width: 950px) {
+                font-size: 12px;
+            }
+        }
+    }
+
+    &_btn {
+        color: #202020;
+        font-weight: 700;
+        height: 33px;
+        padding: 0px 15px;
+        background-color: #4AEF82;
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+        font-size: 12px;
+        column-gap: 5px;
+    }
+
+}
