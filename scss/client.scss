@@ -12,6 +12,10 @@
         @media(max-width: 650px) {
             font-size: 40px;
         }
+
+        @media(max-width: 370px) {
+            font-size: 30px;
+        }
     }
 
     &_controls {
@@ -19,16 +23,32 @@
             margin-top: 32px;
             display: flex;
             gap: 24px;
+            flex-wrap: wrap;
+
+            @media(max-width: 650px) {
+                gap: 12px;
+                margin-top: 8px;
+                flex-wrap: nowrap;
+                overflow: scroll;
+            }
+
         }
 
         &_element {
-            padding: 14px;
-            width: 126px;
+            padding: 14px 20px;
+            min-width: 126px;
             display: flex;
             justify-content: center;
             border-radius: 40px;
             background: rgba($color: #fff, $alpha: .1);
             font-size: 22px;
+
+            @media(max-width: 650px) {
+                font-size: 12px;
+                min-width: 70px;
+                padding: 10px;
+
+            }
 
             &_selected {
                 color: black;
@@ -39,7 +59,11 @@
 
     &_slider {
         margin-top: 60px;
+
         // display: flex;
+        @media(max-width: 650px) {
+            margin-top: 30px;
+        }
     }
 
 
@@ -48,6 +72,11 @@
         background: linear-gradient(to bottom, #313131, #1D1D1D);
         border-radius: 30px;
         min-height: 610px;
+        padding-bottom: 30px;
+
+        @media(max-width: 650px) {
+            min-height: 370px;
+        }
 
         &_header {
             padding: 16px 20px;
@@ -58,42 +87,16 @@
             font-size: 42px;
             font-weight: 700;
 
-            &_purple {
-                background-color: #8120FE;
+            @media(max-width: 650px) {
+                padding: 12px 20px;
+                font-size: 24px;
             }
 
-            &_yellow {
-                background-color: #FEBA02;
+            &_img {
+                @media(max-width: 650px) {
+                    width: 60px;
+                }
             }
-
-            &_blue {
-                background-color: #1EC0C0;
-            }
-
-            &_green {
-                background: linear-gradient(to right, #009273, #02604B);
-            }
-
-            &_coral {
-                background: #FF267D;
-            }
-
-            &_cosmo {
-                background: linear-gradient(to right, #C80E7B, #3E3AD2);
-            }
-
-            &_lightBlue {
-                background: #3E9BF4;
-            }
-
-            &_seaWave {
-                background: #047887;
-            }
-
-            &_red {
-                background: #DB0505;
-            }
-
 
         }
 
@@ -107,6 +110,10 @@
                 font-weight: 700;
                 color: #5E5E5E;
 
+                @media(max-width: 650px) {
+                    font-size: 10px;
+                }
+
                 &_results {
                     color: #00FF6F;
                 }
@@ -116,6 +123,10 @@
                 margin-top: 8px;
                 font-size: 20px;
                 max-width: 380px;
+
+                @media(max-width: 650px) {
+                    font-size: 12px;
+                }
             }
         }
 
