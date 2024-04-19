@@ -72,17 +72,22 @@ const initSlider = () => {
 }
 
 const selectCategory = (cat) => {
-  document.getElementById('clientSlider').innerHTML = '';
-  if (cat == 'All') {
-    for (const client of clients) {
-      addSlide(client)
+  document.getElementById('clientSliderWrapper').style.transition = "200ms opacity";
+  document.getElementById('clientSliderWrapper').style.opacity = 0;
+  setTimeout(() => {
+    document.getElementById('clientSlider').innerHTML = '';
+    if (cat == 'All') {
+      for (const client of clients) {
+        addSlide(client)
+      }
+    } else {
+      const sortedArray = clients.filter(client => client.cat === cat);
+      for (const client of sortedArray) {
+        addSlide(client)
+      }
     }
-  } else {
-    const sortedArray = clients.filter(client => client.cat === cat);
-    for (const client of sortedArray) {
-      addSlide(client)
-    }
-  }
+    document.getElementById('clientSliderWrapper').style.opacity = 1;
+  }, 200);
 }
 
 

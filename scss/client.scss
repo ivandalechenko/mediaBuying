@@ -1,6 +1,48 @@
 .clients {
     margin-top: 44px;
 
+    &_nav {
+        display: flex;
+        column-gap: 25px;
+        justify-content: center;
+        margin-top: 25px;
+
+        &_prev,
+        &_next {
+            background: none;
+            transition: 200ms transform;
+        }
+
+        &_prev:hover {
+            cursor: pointer;
+            transform: scale(1.05) rotate(2deg)
+        }
+
+        &_next:hover {
+            cursor: pointer;
+            transform: scale(1.05) rotate(-2deg)
+        }
+
+        &_prev {
+            img {
+                transform: rotate(180deg);
+            }
+        }
+    }
+
+    &_decor {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        z-index: -1;
+
+        .free_img {
+            align-items: baseline;
+            top: -160px;
+        }
+    }
+
     &_header {
         font-size: 100px;
         font-weight: 700;
@@ -40,8 +82,9 @@
             display: flex;
             justify-content: center;
             border-radius: 40px;
-            background: rgba($color: #fff, $alpha: .1);
+            background-color: rgba($color: #fff, $alpha: .1);
             font-size: 22px;
+            transition: 300ms color, 300ms background-color;
 
             @media(max-width: 650px) {
                 font-size: 12px;
@@ -52,8 +95,14 @@
 
             &_selected {
                 color: black;
-                background: #00FF6F;
+                background-color: #00FF6F;
             }
+        }
+
+        &_element:hover {
+            cursor: pointer;
+            color: black;
+            background-color: #fff8;
         }
     }
 

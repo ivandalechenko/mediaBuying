@@ -16,6 +16,11 @@
     &_logo {
         display: flex;
         align-items: center;
+        transition: 600ms transform;
+    }
+
+    &_logo:hover {
+        transform: scale(1.5);
     }
 
     &_links {
@@ -33,10 +38,19 @@
         &_element {
             font-size: 16px;
             font-weight: 500;
+            transition: 300ms transform, 300ms border;
+            border-bottom: 1px solid #fff0;
 
             @media(max-width: 950px) {
                 font-size: 12px;
             }
+        }
+
+        &_element:hover {
+            border-bottom: 1px solid #ffff;
+            cursor: pointer;
+            transform: rotate(2deg) scale(1.1);
+
         }
     }
 
@@ -51,6 +65,22 @@
         align-items: center;
         font-size: 12px;
         column-gap: 5px;
+        transition: 300ms color, 300ms background-color;
+
+        img {
+            transition: 300ms filter, 300ms transform;
+        }
+    }
+
+    &_btn:hover {
+        cursor: pointer;
+        color: white;
+        background-color: #202020;
+
+        img {
+            filter: invert(1);
+            transform: rotate(90deg);
+        }
     }
 
 }
