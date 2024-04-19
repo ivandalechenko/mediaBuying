@@ -12,6 +12,10 @@
     rel="stylesheet">
   <title>Vite App</title>
   <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
     article,
     aside,
     details,
@@ -456,31 +460,31 @@
         <img src="/img/logo.svg" alt="">
       </div>
       <div class="header_links">
-        <a href="#" class="header_links_element">
+        <a href="#aboutUs" class="header_links_element">
           About us
         </a>
-        <a href="#" class="header_links_element">
+        <a href="#ourClients" class="header_links_element">
           Our Clients
         </a>
-        <a href="#" class="header_links_element">
+        <a href="#solutions" class="header_links_element">
           Solutions
         </a>
-        <a href="#" class="header_links_element">
+        <a href="#partners" class="header_links_element">
           Partners
         </a>
-        <a href="#" class="header_links_element">
+        <a href="#advantages" class="header_links_element">
           Advantages
         </a>
-        <a href="#" class="header_links_element">
+        <a href="#howWeWorks" class="header_links_element">
           How we work
         </a>
-        <a href="#" class="header_links_element">
+        <a href="#form" class="header_links_element">
           Contact us
         </a>
       </div>
-      <div class="header_btn">
+      <a href="#form" class="header_btn">
         CONTACT US <img src="/img/arrowRight.svg" alt="">
-      </div>
+      </a>
     </header>
     <div class="hero">
       <div class="hero_header">
@@ -548,7 +552,7 @@
             <div class="hero_light2"></div>
           </div>
         </div>
-        <a class="hero_cta">
+        <a href="#form" class="hero_cta">
           CONTACT US
           <div class="free_img">
             <img src="/img/whiteArrowRight.svg" alt="">
@@ -556,7 +560,7 @@
         </a>
       </div>
     </div>
-    <div class="aboutUs container">
+    <div id="aboutUs" class="aboutUs container">
       <div class="aboutUs_decor">
         <div class="free_img">
           <img src="/img/aboutUsDecor.svg" alt="">
@@ -591,7 +595,7 @@
         </div>
       </div>
     </div>
-    <div class="whyWe container">
+    <div id="howWeWorks" class="whyWe container">
       <div class="whyWe_header">
         <div class="whyWe_header_small">
           <div class="whyWe_header_decor">
@@ -683,7 +687,7 @@
         </div>
       </div>
     </div>
-    <div class="clients">
+    <div id="ourClients" class="clients">
       <div class="clients_decor">
         <div class="free_img">
           <img src="/img/casesDecor.svg" alt="">
@@ -711,7 +715,7 @@
       </div>
 
     </div>
-    <div class="solutions containerLarge">
+    <div id="solutions" class="solutions containerLarge">
       <div class="solutions_header">
         Solutions
       </div>
@@ -800,7 +804,7 @@
         </div>
       </div>
       <div class="hero_cta_wrapper">
-        <a class="hero_cta">
+        <a href="#form" class="hero_cta">
           CONTACT US
           <div class="free_img">
             <img src="/img/whiteArrowRight.svg" alt="">
@@ -808,7 +812,7 @@
         </a>
       </div>
     </div>
-    <div class="partners container">
+    <div id="partners" class="partners container">
       <div class="partners_light1_wrapper">
         <div class="free_img">
           <div class="partners_light1"></div>
@@ -864,7 +868,7 @@
         </div>
       </div>
     </div>
-    <div class="choose container">
+    <div id="advantages" class="choose container">
       <div class="choose_header">
         Why should you choose our performance marketing
       </div>
@@ -941,130 +945,132 @@
         </div>
       </div>
     </div>
-    <div class="contact container">
-      <div class="contact_header">
-        Contact us
-      </div>
-      <div class="contact_forWhoSelectBtn contact_forWhoSelectBtnSelected">
-        For Customer
-      </div>
-      <div class="contact_forWhoSelectBtn">
-        For Talents
-      </div>
-      <div class="contact_inputBlock">
-        <div class="contact_label">
-          First Name
+    <div class="lastLightWrapper">
+      <div id="form" class="contact container">
+        <div class="contact_header">
+          Contact us
         </div>
-        <input type="text" class="contact_input">
-      </div>
-      <div class="contact_inputBlock">
-        <div class="contact_label">
-          Last Name
+        <div class="contact_forWhoSelectBtn contact_forWhoSelectBtnSelected">
+          For Customer
         </div>
-        <input type="text" class="contact_input">
-      </div>
-      <div class="contact_inputBlock">
-        <div class="contact_label">
-          Email
+        <div class="contact_forWhoSelectBtn">
+          For Talents
         </div>
-        <input type="text" class="contact_input">
-      </div>
-      <div class="contact_inputBlock">
-        <div class="contact_label">
-          Company name
-        </div>
-        <input type="text" class="contact_input">
-      </div>
-      <div class="contact_inputBlockLarge">
-        <div class="contact_label">
-          Message
-        </div>
-        <input type="text" class="contact_input" placeholder="Write your message..">
-      </div>
-      <button class="contact_btn">
-        CONTACT US
-        <img src="/img/arrowRightWhite.svg" alt="">
-      </button>
-    </div>
-    <div class="footer_wrapper">
-      <div class="footer_light_wrapper">
-        <div class="free_img">
-          <div class="footer_light"></div>
-        </div>
-      </div>
-      <footer class="footer container">
-
-        <div class="footer_col">
-          <img src="/img/logo.svg" class="footer_logo" alt="">
-        </div>
-        <div class="footer_col footer_links">
-          <a href="#" class="footer_link">
-            Services
-          </a>
-          <a href="#" class="footer_link">
-            Mobile Marketing
-          </a>
-          <a href="#" class="footer_link">
-            Creative Production
-          </a>
-          <a href="#" class="footer_link">
-            Web promotion
-          </a>
-          <a href="#" class="footer_link">
-            ASO
-          </a>
-        </div>
-
-        <div class="footer_col footer_contats">
-          <div class="footer_contats_header">
-            Сontacts/
+        <div class="contact_inputBlock">
+          <div class="contact_label">
+            First Name
           </div>
-          <div class="footer_contats_elements">
-            <a href="#" class="footer_contats_element">
-              <div class="footer_contats_element_imgWrapper">
-                <img src="/img/media/tg.svg" alt="">
-              </div>
-              Telegram
-            </a>
-            <a href="#" class="footer_contats_element">
-              <div class="footer_contats_element_imgWrapper">
-                <img src="/img/media/mail.svg" alt="">
-              </div>
-              Email
-            </a>
-            <a href="#" class="footer_contats_element">
-              <div class="footer_contats_element_imgWrapper">
-                <img src="/img/media/skype.svg" alt="">
-              </div>
-              Skype
-            </a>
-            <a href="#" class="footer_contats_element">
-              <div class="footer_contats_element_imgWrapper">
-                <img src="/img/media/in.svg" alt="">
-              </div>
-              Linkedin
-            </a>
-            <a href="#" class="footer_contats_element">
-              <div class="footer_contats_element_imgWrapper">
-                <img src="/img/media/ig.svg" alt="">
-              </div>
-              Instagram
-            </a>
+          <input type="text" class="contact_input">
+        </div>
+        <div class="contact_inputBlock">
+          <div class="contact_label">
+            Last Name
+          </div>
+          <input type="text" class="contact_input">
+        </div>
+        <div class="contact_inputBlock">
+          <div class="contact_label">
+            Email
+          </div>
+          <input type="text" class="contact_input">
+        </div>
+        <div class="contact_inputBlock">
+          <div class="contact_label">
+            Company name
+          </div>
+          <input type="text" class="contact_input">
+        </div>
+        <div class="contact_inputBlockLarge">
+          <div class="contact_label">
+            Message
+          </div>
+          <input type="text" class="contact_input" placeholder="Write your message..">
+        </div>
+        <button class="contact_btn">
+          CONTACT US
+          <img src="/img/arrowRightWhite.svg" alt="">
+        </button>
+      </div>
+      <div class="footer_wrapper">
+        <div class="footer_light_wrapper">
+          <div class="free_img">
+            <div class="footer_light"></div>
           </div>
         </div>
-      </footer>
-    </div>
-    <div class="underFooter container">
-      <div class="underFooter_rights">
-        ©2023-2024. All rights reserved
+        <footer class="footer container">
+
+          <div class="footer_col">
+            <img src="/img/logo.svg" class="footer_logo" alt="">
+          </div>
+          <div class="footer_col footer_links">
+            <a href="#" class="footer_link">
+              Services
+            </a>
+            <a href="#" class="footer_link">
+              Mobile Marketing
+            </a>
+            <a href="#" class="footer_link">
+              Creative Production
+            </a>
+            <a href="#" class="footer_link">
+              Web promotion
+            </a>
+            <a href="#" class="footer_link">
+              ASO
+            </a>
+          </div>
+
+          <div class="footer_col footer_contats">
+            <div class="footer_contats_header">
+              Сontacts/
+            </div>
+            <div class="footer_contats_elements">
+              <a href="#" class="footer_contats_element">
+                <div class="footer_contats_element_imgWrapper">
+                  <img src="/img/media/tg.svg" alt="">
+                </div>
+                Telegram
+              </a>
+              <a href="#" class="footer_contats_element">
+                <div class="footer_contats_element_imgWrapper">
+                  <img src="/img/media/mail.svg" alt="">
+                </div>
+                Email
+              </a>
+              <a href="#" class="footer_contats_element">
+                <div class="footer_contats_element_imgWrapper">
+                  <img src="/img/media/skype.svg" alt="">
+                </div>
+                Skype
+              </a>
+              <a href="#" class="footer_contats_element">
+                <div class="footer_contats_element_imgWrapper">
+                  <img src="/img/media/in.svg" alt="">
+                </div>
+                Linkedin
+              </a>
+              <a href="#" class="footer_contats_element">
+                <div class="footer_contats_element_imgWrapper">
+                  <img src="/img/media/ig.svg" alt="">
+                </div>
+                Instagram
+              </a>
+            </div>
+          </div>
+        </footer>
       </div>
-      <div class="underFooter_links">
-        <a href="#" class="underFooter_link">
-          Terms of use
-        </a>
-        <a href="#" class="underFooter_link">
-          Confidentiality policy
-        </a>
+      <div class="underFooter container">
+        <div class="underFooter_rights">
+          ©2023-2024. All rights reserved
+        </div>
+        <div class="underFooter_links">
+          <a href="#" class="underFooter_link">
+            Terms of use
+          </a>
+          <a href="#" class="underFooter_link">
+            Confidentiality policy
+          </a>
+        </div>
       </div>
     </div>
 

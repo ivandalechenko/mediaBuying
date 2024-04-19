@@ -72,7 +72,7 @@ const initSlider = () => {
 }
 
 const selectCategory = (cat) => {
-  document.getElementById('clientSliderWrapper').style.transition = "200ms opacity";
+  document.getElementById('clientSliderWrapper').style.transition = "400ms opacity";
   document.getElementById('clientSliderWrapper').style.opacity = 0;
   setTimeout(() => {
     document.getElementById('clientSlider').innerHTML = '';
@@ -87,7 +87,7 @@ const selectCategory = (cat) => {
       }
     }
     document.getElementById('clientSliderWrapper').style.opacity = 1;
-  }, 200);
+  }, 400);
 }
 
 

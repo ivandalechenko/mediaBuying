@@ -37,9 +37,17 @@
         position: relative;
         z-index: -1;
 
+        @media(max-width: 650px) {
+            display: none;
+        }
+
         .free_img {
             align-items: baseline;
             top: -160px;
+
+            img {
+                min-width: 130vw;
+            }
         }
     }
 

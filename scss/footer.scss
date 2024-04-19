@@ -3,6 +3,10 @@
     padding-bottom: 36px;
     display: flex;
 
+    &_LW {
+        overflow: hidden;
+    }
+
     &_light {
         min-width: 600px;
         min-height: 600px;
